@@ -4,8 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "build": "npm run prep",
+    "prep": "npm run exp && node out.js && npm run fix-inline && npm run copy-manifest",
+    "exp": "next build",
+    "run": "next start",
+    "copy-manifest": "cp ./extension/manifest.json ./out/manifest.json",
+    "fix-inline": "node fix-inline.js",
     "lint": "next lint"
   },
   "dependencies": {
