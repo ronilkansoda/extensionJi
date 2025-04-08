@@ -7,13 +7,5 @@
     },
     "content_security_policy": {
         "extension_pages": "script-src 'self'; object-src 'self';"
-    },
-    "permissions": [
-        "storage",
-        "activeTab",
-        "scripting"
-    ],
-    "host_permissions": [
-        "http://localhost:3000/"
-    ]
+    }
 }
